@@ -2,6 +2,7 @@
 
 // =========================================
 // Variables of gulp pluggins for clarity
+// edit these variables to suit your project
 // =========================================
 
 var gulp = require('gulp'),
@@ -20,7 +21,7 @@ var gulp = require('gulp'),
 
 // =========================================
 // Variables of project's path
-// edit these variables to suit your project
+// edit these path to suit your project
 // =========================================
 
 var path = {
