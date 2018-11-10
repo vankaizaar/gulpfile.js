@@ -41,6 +41,7 @@ Sample gulpfile.js settings
 |     |     +-- main.js  
 |     +-- img/  
 |     +-- fonts/  
+|     +-- template/
 |     +-- index.html  
 +-- gulpfile.js  
 +-- package.json
