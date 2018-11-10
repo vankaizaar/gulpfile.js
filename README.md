@@ -22,7 +22,7 @@ Sample gulpfile.js settings
    * Auto reload page
    
 ## Project
-'+-- node_mmodules/
+`+-- node_mmodules/
 +-- build/
 |     +-- css/
 |     +-- js/
@@ -42,25 +42,25 @@ Sample gulpfile.js settings
 |     +-- fonts/
 |     +-- index.html
 +-- gulpfile.js
-+-- package.json'
++-- package.json`
 
 ## Setup
-Run 'npm instasll' to install packages
+Run `npm instasll` to install packages
 
 ## Start
-Run 'gulp' and start developing
+Run `gulp` and start developing
 
 ## All gulp tasks
-* 'gulp' or 'gulp default' - default task, builds assets, starts watching directories for changes and reload browser
-* 'gulp build' - rebuilds all assets
-* 'gulp watch' - starts watching directories for changes
-* 'gulp webserver' - run local web server
-* 'gulp clean' - delete build folder
-* 'gulp html:build' - html compilation
-* 'gulp style:build' - scss compilation
-* 'gulp css:build' - css compilation from ./libs
-* 'gulp image:build' - image compilation
-* 'gulp fonts:build' - fonts compilation
+* `gulp` or 'gulp default' - default task, builds assets, starts watching directories for changes and reload browser
+* `gulp build` - rebuilds all assets
+* `gulp watch` - starts watching directories for changes
+* `gulp webserver` - run local web server
+* `gulp clean` - delete build folder
+* `gulp html:build` - html compilation
+* `gulp style:build` - scss compilation
+* `gulp css:build` - css compilation from ./libs
+* `gulp image:build` - image compilation
+* `gulp fonts:build` - fonts compilation
 
 ## License
 MIT License
