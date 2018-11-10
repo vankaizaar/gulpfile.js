@@ -24,7 +24,7 @@ Sample gulpfile.js settings
 ## Project
 +-- node_mmodules/  
 +-- build/  
-|<пробел><пробел><пробел><пробел>+-- css/  
+|    +-- css/  
 |     +-- js/  
 |     +-- img/  
 |     +-- fonts/  
