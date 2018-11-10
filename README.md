@@ -54,7 +54,7 @@ Run `npm instasll` to install packages
 Run `gulp` and start developing
 
 ## All gulp tasks
-* `gulp` or 'gulp default' - default task, builds assets, starts watching directories for changes and reload browser
+* `gulp` or `gulp default` - default task, builds assets, starts watching directories for changes and reload browser
 * `gulp build` - rebuilds all assets
 * `gulp watch` - starts watching directories for changes
 * `gulp webserver` - run local web server
