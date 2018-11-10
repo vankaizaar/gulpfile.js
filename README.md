@@ -22,9 +22,10 @@ Sample gulpfile.js settings
    * Auto reload page
    
 ## Project
+```
 +-- node_mmodules/  
 +-- build/  
-|\ \ \ \ +-- css/  
+|     +-- css/  
 |     +-- js/  
 |     +-- img/  
 |     +-- fonts/  
@@ -43,6 +44,7 @@ Sample gulpfile.js settings
 |     +-- index.html  
 +-- gulpfile.js  
 +-- package.json
+```
 
 ## Setup
 Run `npm instasll` to install packages
