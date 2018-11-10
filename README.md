@@ -22,26 +22,26 @@ Sample gulpfile.js settings
    * Auto reload page
    
 ## Project
-`+-- node_mmodules/
-+-- build/
-|     +-- css/
-|     +-- js/
-|     +-- img/
-|     +-- fonts/
-|     +-- index.html
-+-- src/
-|     +-- style/
-|     |     +-- libs/
-|     |     +-- partials/
-|     |     +-- main.scss
-|     +-- js/
-|     |     +-- libs/
-|     |     +-- partials/
-|     |     +-- main.js
-|     +-- img/
-|     +-- fonts/
-|     +-- index.html
-+-- gulpfile.js
+`+-- node_mmodules/  
++-- build/  
+|     +-- css/  
+|     +-- js/  
+|     +-- img/  
+|     +-- fonts/  
+|     +-- index.html  
++-- src/  
+|     +-- style/  
+|     |     +-- libs/  
+|     |     +-- partials/  
+|     |     +-- main.scss  
+|     +-- js/  
+|     |     +-- libs/  
+|     |     +-- partials/  
+|     |     +-- main.js  
+|     +-- img/  
+|     +-- fonts/  
+|     +-- index.html  
++-- gulpfile.js  
 +-- package.json`
 
 ## Setup
