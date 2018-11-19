@@ -35,7 +35,7 @@ var path = {
     src: {
         html: 'src/*.html',
         js: 'src/js/main.js',
-        js-lib: 'src/js/libs/*.js',
+        jsLib: 'src/js/libs/*.js',
         style: 'src/style/main.scss',
         css: 'src/style/libs/*.css',
         img: 'src/img/**/*.*',
@@ -85,8 +85,8 @@ gulp.task('js:build', function () {
         .pipe(reload({stream: true})); 
 });
 
-gulp.task('js-lib:build', function () {
-    gulp.src(path.src.js-lib) 
+gulp.task('jsLib:build', function () {
+    gulp.src(path.src.jsLib) 
         .pipe(gulp.dest(path.build.js)) 
         .pipe(reload({stream: true}));
 });
@@ -128,7 +128,7 @@ gulp.task('fonts:build', function() {
 gulp.task('build', [
     'html:build',
     'js:build',
-    'js-lib:build',
+    'jsLib:build',
     'style:build',
     'css:build',
     'fonts:build',
