@@ -30,7 +30,7 @@ var path = {
         css: 'build/css/',
         img: 'build/img/',
         fonts: 'build/fonts/',
-        libs: 'build/libs'
+        libs: 'build/js'
     },
     src: {
         html: 'src/*.html',
@@ -46,7 +46,7 @@ var path = {
         sass: 'src/sass/*.sass',
         img: 'src/img/**/*.*',
         fonts: 'src/fonts/**/*.*',
-        libs: 'src/libs/**/*.js'
+        libs: 'src/libs/**/*.min.js'
     },
     clean: './build'
 };
@@ -117,7 +117,7 @@ gulp.task('fonts', function() {
 
 gulp.task('libs', function() {
     gulp.src(path.src.libs)
-        .pipe(gulp.dest(path.build.libs))
+        .pipe(gulp.dest(path.build.js))
         .pipe(reload({stream: true}));
 });
 
