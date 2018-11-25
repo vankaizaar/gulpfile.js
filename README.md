@@ -31,24 +31,20 @@ Sample gulpfile.js settings
 |     +-- fonts/  
 |     +-- index.html  
 +-- src/  
-|     +-- style/  
-|     |     +-- libs/  
-|     |     +-- partials/  
+|     +-- sass/   
 |     |     +-- main.scss  
-|     +-- js/  
-|     |     +-- libs/  
-|     |     +-- partials/  
+|     +-- js/    
 |     |     +-- main.js  
 |     +-- img/  
 |     +-- fonts/  
-|     +-- template/
+|     +-- libs/
 |     +-- index.html  
 +-- gulpfile.js  
 +-- package.json
 ```
 
 ## Setup
-Run `npm instasll` to install packages
+Run `npm i` to install packages
 
 ## Start
 Run `gulp` and start developing
@@ -59,11 +55,10 @@ Run `gulp` and start developing
 * `gulp watch` - starts watching directories for changes
 * `gulp webserver` - run local web server
 * `gulp clean` - delete build folder
-* `gulp html:build` - html compilation
-* `gulp style:build` - scss compilation
-* `gulp css:build` - css compilation from ./libs
-* `gulp image:build` - image compilation
-* `gulp fonts:build` - fonts compilation
+* `gulp html` - html compilation
+* `gulp sass` - scss compilation
+* `gulp image` - image compilation
+* `gulp fonts` - fonts compilation
 
 ## License
 MIT License
