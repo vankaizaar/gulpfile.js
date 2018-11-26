@@ -15,6 +15,7 @@ var gulp = require('gulp'),
     imagemin = require('gulp-imagemin'),
     pngquant = require('imagemin-pngquant'),
     rimraf = require('rimraf'),
+    notify = require("gulp-notify"),
     browserSync = require("browser-sync"),
     reload = browserSync.reload;
 
@@ -29,24 +30,21 @@ var path = {
         js: 'build/js/',
         css: 'build/css/',
         img: 'build/img/',
-        fonts: 'build/fonts/',
-        libs: 'build/js'
+        fonts: 'build/fonts/'
     },
     src: {
         html: 'src/*.html',
-        js: 'src/js/main.js',
+        js: 'src/js/**/*.js',
         sass: 'src/sass/main.sass',
         img: 'src/img/**/*.*',
-        fonts: 'src/fonts/**/*.*',
-        libs: 'src/libs/**/*.js'
+        fonts: 'src/fonts/**/*.*'
     },
     watch: {
         html: 'src/**/*.html',
         js: 'src/js/**/*.js',
         sass: 'src/sass/*.sass',
         img: 'src/img/**/*.*',
-        fonts: 'src/fonts/**/*.*',
-        libs: 'src/libs/**/*.min.js'
+        fonts: 'src/fonts/**/*.*'
     },
     clean: './build'
 };
@@ -87,9 +85,7 @@ gulp.task('js', function () {
 gulp.task('sass', function () {
     gulp.src(path.src.sass) 
         .pipe(sourcemaps.init())
-        .pipe(sass().on('error', function(error) {      
-            done(error);
-        })) 
+        .pipe(sass().on("error", notify.onError()))
         .pipe(prefixer()) 
         .pipe(cssmin()) 
         .pipe(sourcemaps.write())
@@ -115,19 +111,12 @@ gulp.task('fonts', function() {
         .pipe(reload({stream: true}));
 });
 
-gulp.task('libs', function() {
-    gulp.src(path.src.libs)
-        .pipe(gulp.dest(path.build.js))
-        .pipe(reload({stream: true}));
-});
-
 gulp.task('build', [
     'html',
     'js',
     'sass',
     'fonts',
-    'image',
-    'libs'
+    'image'
 ]);
 
 // =========================================
